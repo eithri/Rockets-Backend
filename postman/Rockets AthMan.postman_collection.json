@@ -1,0 +1,1187 @@
+{
+	"info": {
+		"_postman_id": "65c9a8d5-9860-4256-9593-c253e444b682",
+		"name": "Rockets AthMan",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "players",
+			"item": [
+				{
+					"name": "/players",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-access-token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYyOTc1OTAxNCwiZXhwIjoxNjI5ODQ1NDE0fQ.RS7_VdC6rUbwQMQyf8_1dWLjoDrmzDzRTv7AZLP2C10"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"imgUrl\":\"Felipe\",\n    \"name\":\"Felipe\",\n    \"lastName\": \"Vargas\",\n    \"gender\": \"Male\",\n    \"birthday\": \"29-05-2001\",\n    \"documentId\": \"1002567487\",\n    \"phone\": \"3224549893\",\n    \"address\": \"Calle 12\",\n    \"position\": \"QB\",\n    \"height\": \"1.74cm\",\n    \"weight\": \"70kg\",\n    \"eps\": \"Locura\",\n    \"username\":\"Santiago\",\n    \"email\":\"felipesan@gmail.com\",\n    \"password\":\"felipe\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/players",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players/:playerId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-access-token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjliNDhjMDE0ZjVjYTgwNmFmNWE3ZCIsImlhdCI6MTYyNjk3NzQyMCwiZXhwIjoxNjI3MDYzODIwfQ.V9snGgXrs-z6D_S8AD4c0CxzNl00YIzi-M-niiFYkgM"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Santiago\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/players/60f9b5993977e6a885215a8a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"players",
+								"60f9b5993977e6a885215a8a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players/:playerId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "x-access-token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjliNDhjMDE0ZjVjYTgwNmFmNWE3ZCIsImlhdCI6MTYyNjk3NzQyMCwiZXhwIjoxNjI3MDYzODIwfQ.V9snGgXrs-z6D_S8AD4c0CxzNl00YIzi-M-niiFYkgM"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"laptop Lenovo Thinkpad T400\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/players/60f9b4bf3977e6a885215a7b",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"players",
+								"60f9b4bf3977e6a885215a7b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/players",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/players",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"players"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/products/:productId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/api/players/60f9b5993977e6a885215a8a",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"players",
+								"60f9b5993977e6a885215a8a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "/users",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDM3OTkwMThlMGU2ZDBiNGZjNjNmNiIsImlhdCI6MTYzMTgxMTk4NCwiZXhwIjoxNjMxODk4Mzg0fQ.OW4aP3zEYZZBZflxb71cUNxW6q1MlAhtw576KyaHVoU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"User Admin2\",\n    \"email\": \"useradmin2@gmail.com\",\n    \"password\": \"password\",\n    \"roles\":[\"moderator\",\"admin\"]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/:userId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDM3OTkwMThlMGU2ZDBiNGZjNjNmNiIsImlhdCI6MTYzMTgxMTk4NCwiZXhwIjoxNjMxODk4Mzg0fQ.OW4aP3zEYZZBZflxb71cUNxW6q1MlAhtw576KyaHVoU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"User Admin2\",\n    \"email\": \"useradmin2@gmail.com\",\n    \"password\": \"password\",\n    \"roles\":[\"moderator\",\"admin\"]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/player/:userId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNDM3OTkwMThlMGU2ZDBiNGZjNjNmNiIsImlhdCI6MTYzMTgxMTk4NCwiZXhwIjoxNjMxODk4Mzg0fQ.OW4aP3zEYZZBZflxb71cUNxW6q1MlAhtw576KyaHVoU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"User Admin2\",\n    \"email\": \"useradmin2@gmail.com\",\n    \"password\": \"password\",\n    \"roles\":[\"moderator\",\"admin\"]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjBjZjdlNGYxNDg2NDAwNDg2ZWU2ZiIsImlhdCI6MTYyNjM5NDQ5NCwiZXhwIjoxNjI2NDgwODk0fQ.ITHyheBgBz4TJSBxtjqdGSkHCDJQQoeHoZswkjf_iCk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"User Admin2\",\n    \"email\": \"useradmin2@gmail.com\",\n    \"password\": \"password\",\n    \"roles\":[\"moderator\",\"admin\"]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/users/recoverPassword",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjBjZjdlNGYxNDg2NDAwNDg2ZWU2ZiIsImlhdCI6MTYyNjM5NDQ5NCwiZXhwIjoxNjI2NDgwODk0fQ.ITHyheBgBz4TJSBxtjqdGSkHCDJQQoeHoZswkjf_iCk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"User Admin2\",\n    \"email\": \"useradmin2@gmail.com\",\n    \"password\": \"password\",\n    \"roles\":[\"moderator\",\"admin\"]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "/api/auth/signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwZjBjZjdlNGYxNDg2NDAwNDg2ZWU2ZiIsImlhdCI6MTYyNjM5NDQ5NCwiZXhwIjoxNjI2NDgwODk0fQ.ITHyheBgBz4TJSBxtjqdGSkHCDJQQoeHoZswkjf_iCk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"username\":\"User Admin\",\n    \"email\": \"useradmin@gmail.com\",\n    \"password\": \"password\",\n    \"roles\":[\"moderator\",\"admin\"]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/auth/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/auth/signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\":\"useradmin@gmail.com\",\n    \"password\":\"password\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/auth/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "proofs",
+			"item": [
+				{
+					"name": "/proofs",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMjg4NTAxNCwiZXhwIjoxNjMyOTcxNDE0fQ.oeKimFg_rh8RqOw0xcnDgxzxdzsyokqEvLQvO6ZynIM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"40yd\",\n    \"unitMeasure\": \"seconds\",\n    \"proofType\": \"speed\",\n    \"description\": \"The best test\",\n    \"rateMale\": 5,\n    \"rateFemale\": 6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/proofs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proofs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/proofs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMjg4NTAxNCwiZXhwIjoxNjMyOTcxNDE0fQ.oeKimFg_rh8RqOw0xcnDgxzxdzsyokqEvLQvO6ZynIM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"40yd\",\n    \"unitMeasure\": \"seconds\",\n    \"proofType\": \"speed\",\n    \"description\": \"The best test\",\n    \"rateMale\": 5,\n    \"rateFemale\": 6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/proofs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proofs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/proofs/addResult/:proofId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMzM2NTE0OSwiZXhwIjoxNjMzNDUxNTQ5fQ.Acf8hXgt4qozXfXY1PC3YGUMNF72FcVxGsJU1qc9gFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"playerId\":\"6153da1fe6219d854496475e\",\n        \"result\": 4\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/proofs/addResult/6153d94de6219d854496472d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proofs",
+								"addResult",
+								"6153d94de6219d854496472d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/proofs/editResult/:proofId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMzM2NTE0OSwiZXhwIjoxNjMzNDUxNTQ5fQ.Acf8hXgt4qozXfXY1PC3YGUMNF72FcVxGsJU1qc9gFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"playerId\":\"6153da1fe6219d854496475e\",\n        \"result\": 100\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/proofs/editResult/6153d94de6219d854496472d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proofs",
+								"editResult",
+								"6153d94de6219d854496472d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/proofs/deleteResult/:proofId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMzM2NTE0OSwiZXhwIjoxNjMzNDUxNTQ5fQ.Acf8hXgt4qozXfXY1PC3YGUMNF72FcVxGsJU1qc9gFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"playerId\":\"61242f5904130f8d51a21acd\"\n}\n"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/proofs/deleteResult/6153d94de6219d854496472d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proofs",
+								"deleteResult",
+								"6153d94de6219d854496472d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/proofs/:proofId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMTU1MzM5OCwiZXhwIjoxNjMxNjM5Nzk4fQ.WYDLseDpCcgQyuOvTEL5ogPWbWK_d6fGSWChMDgRbwY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"vertical jump\",\n    \"unitMeasure\": \"meters\",\n    \"proofType\": \"jump\",\n    \"description\": \"The best jump test\",\n    \"rateMale\": 5,\n    \"rateFemale\": 6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/proofs/613ffa879067d0f49e28ef48",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proofs",
+								"613ffa879067d0f49e28ef48"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/proofs/:proofId Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMTU1MzM5OCwiZXhwIjoxNjMxNjM5Nzk4fQ.WYDLseDpCcgQyuOvTEL5ogPWbWK_d6fGSWChMDgRbwY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"40yd\",\n    \"unitMeasure\": \"seconds\",\n    \"proofType\": \"speed\",\n    \"description\": \"The best test\",\n    \"rateMale\": 5,\n    \"rateFemale\": 6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/proofs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proofs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/proofs/:proofId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMjg4NTAxNCwiZXhwIjoxNjMyOTcxNDE0fQ.oeKimFg_rh8RqOw0xcnDgxzxdzsyokqEvLQvO6ZynIM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"40yd\",\n    \"unitMeasure\": \"seconds\",\n    \"proofType\": \"speed\",\n    \"description\": \"The best test\",\n    \"rateMale\": 5,\n    \"rateFemale\": 6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/proofs/614022c4d29e47437e50e425",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"proofs",
+								"614022c4d29e47437e50e425"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "playbook",
+			"item": [
+				{
+					"name": "/playbook",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMzM2NTE0OSwiZXhwIjoxNjMzNDUxNTQ5fQ.Acf8hXgt4qozXfXY1PC3YGUMNF72FcVxGsJU1qc9gFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"40yd\",\n    \"unitMeasure\": \"seconds\",\n    \"proofType\": \"speed\",\n    \"description\": \"The best test\",\n    \"rateMale\": 5,\n    \"rateFemale\": 6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/playbook",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"playbook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/playbook/:playbookId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxNTNjMDllMTQ0M2ViNjQ0MjBiYmU0MCIsImlhdCI6MTYzMjg3ODc1MCwiZXhwIjoxNjMyOTY1MTUwfQ.CvQmfeQoMbShRrfQNOssfGrXMEnvgbSJcpNqZpNmryM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"40yd\",\n    \"unitMeasure\": \"seconds\",\n    \"proofType\": \"speed\",\n    \"description\": \"The best test\",\n    \"rateMale\": 5,\n    \"rateFemale\": 6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/playbook/6153c761bad3317a49fbfdff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"playbook",
+								"6153c761bad3317a49fbfdff"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/playbook",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMjg3ODgzMiwiZXhwIjoxNjMyOTY1MjMyfQ.ksHwLo9dgmKNGTkyiWSl_LP4V515InUsuPKPbkUOua0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Male2 Plays\",\n    \"imgUrl\": \"undefined2\",\n    \"description\": \"The best plays\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/playbook",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"playbook"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/playbook/:playbookId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMjg3ODgzMiwiZXhwIjoxNjMyOTY1MjMyfQ.ksHwLo9dgmKNGTkyiWSl_LP4V515InUsuPKPbkUOua0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Femalesss Playss\",\n    \"imgUrl\": \"undefinedsdds\",\n    \"description\": \"The best playssss\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/playbook/6153c5cfc480197591581ece",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"playbook",
+								"6153c5cfc480197591581ece"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/playbook/:playbookId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMjg3ODgzMiwiZXhwIjoxNjMyOTY1MjMyfQ.ksHwLo9dgmKNGTkyiWSl_LP4V515InUsuPKPbkUOua0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Females Plays\",\n    \"imgUrl\": \"undefined\",\n    \"description\": \"The best plays\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/playbook/6153c681b27794780e1d0d64",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"playbook",
+								"6153c681b27794780e1d0d64"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/playbook/addPlay/:playbookId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMzM2NTE0OSwiZXhwIjoxNjMzNDUxNTQ5fQ.Acf8hXgt4qozXfXY1PC3YGUMNF72FcVxGsJU1qc9gFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"C1111\",\n    \"imgUrl\": \"undefined1d1\",\n    \"description\": \"Shortr Pla1y\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/playbook/addPlay/6153c9d932339583dac0a59e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"playbook",
+								"addPlay",
+								"6153c9d932339583dac0a59e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "plays",
+			"item": [
+				{
+					"name": "/plays",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMzM2NTE0OSwiZXhwIjoxNjMzNDUxNTQ5fQ.Acf8hXgt4qozXfXY1PC3YGUMNF72FcVxGsJU1qc9gFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"40yd\",\n    \"unitMeasure\": \"seconds\",\n    \"proofType\": \"speed\",\n    \"description\": \"The best test\",\n    \"rateMale\": 5,\n    \"rateFemale\": 6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/play",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"play"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/play/:playId",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMzM2NTE0OSwiZXhwIjoxNjMzNDUxNTQ5fQ.Acf8hXgt4qozXfXY1PC3YGUMNF72FcVxGsJU1qc9gFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"40yd\",\n    \"unitMeasure\": \"seconds\",\n    \"proofType\": \"speed\",\n    \"description\": \"The best test\",\n    \"rateMale\": 5,\n    \"rateFemale\": 6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/play/615b2e5091252f7f8b416a2f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"play",
+								"615b2e5091252f7f8b416a2f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/play/:playId",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMzM2NTE0OSwiZXhwIjoxNjMzNDUxNTQ5fQ.Acf8hXgt4qozXfXY1PC3YGUMNF72FcVxGsJU1qc9gFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"Femalesss Playss\",\n    \"imgUrl\": \"undefinedsdds\",\n    \"description\": \"The best playssss\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/play/615b2e5091252f7f8b416a2f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"play",
+								"615b2e5091252f7f8b416a2f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/play/:playId",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMzM2NTE0OSwiZXhwIjoxNjMzNDUxNTQ5fQ.Acf8hXgt4qozXfXY1PC3YGUMNF72FcVxGsJU1qc9gFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"C2111\",\n    \"imgUrl\": \"undefined1d1\",\n    \"description\": \"Shortr Pla1y\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/play/615b2f1f91252f7f8b416a68",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"play",
+								"615b2f1f91252f7f8b416a68"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "statistics",
+			"item": [
+				{
+					"name": "/statistic/category",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMzM2NTE0OSwiZXhwIjoxNjMzNDUxNTQ5fQ.Acf8hXgt4qozXfXY1PC3YGUMNF72FcVxGsJU1qc9gFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"40yd\",\n    \"unitMeasure\": \"seconds\",\n    \"proofType\": \"speed\",\n    \"description\": \"The best test\",\n    \"rateMale\": 5,\n    \"rateFemale\": 6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/statistic/category",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"statistic",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/statistic/category/proof",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxMjQyNjI2MTZjZTFjNmUwYjZjYmM3YiIsImlhdCI6MTYzMzM2NTE0OSwiZXhwIjoxNjMzNDUxNTQ5fQ.Acf8hXgt4qozXfXY1PC3YGUMNF72FcVxGsJU1qc9gFY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"40yd\",\n    \"unitMeasure\": \"seconds\",\n    \"proofType\": \"speed\",\n    \"description\": \"The best test\",\n    \"rateMale\": 5,\n    \"rateFemale\": 6\n}"
+						},
+						"url": {
+							"raw": "http://localhost:4000/api/statistic/category/proof/agility",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"api",
+								"statistic",
+								"category",
+								"proof",
+								"agility"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
